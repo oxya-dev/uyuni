@@ -56,6 +56,8 @@ npm run build-storybook
 
 The output is written to `storybook-static`.
 
+The retired internal catalog's RBAC database entry is retained for compatibility with installed server versions that can start while schema upgrades are applied. The application route is removed by the Java update.
+
 Reusable components live in `web/html/src/components`. New or actively changed reusable components should include a `.stories.tsx` file. Use `Components` for generic UI building blocks, `Compositions` for combined or Uyuni-specific workflows, and `Deprecated` only for components with a documented replacement.
 
 ## Scripts
